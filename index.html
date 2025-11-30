@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Ancestrix</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      margin: 0;
+      padding-top: 60px;
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+      opacity: 0.92;
+    }
+
+    h1 {
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      opacity: 0.7;
+      margin-bottom: 25px;
+    }
+
+    .links a {
+      color: #f0f0f0;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid #555;
+    }
+
+    .contact-form {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      margin: 6px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    input, textarea {
+      background: #1e1e1e;
+      color: #fff;
+    }
+
+    button {
+      background: #ffffff;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    footer {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 0.8rem;
+      opacity: 0.35;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- LOGO SECTION -->
+  <div class="logo">
+    <img src="logo.png" alt="Project Ancestrix Logo">
+  </div>
+
+  <h1>Project Ancestrix</h1>
+  <p>Something is forming.</p>
+
+  <div class="links">
+    <a href="YOUR_TIKTOK_LINK" target="_blank">TikTok</a>
+    <a href="YOUR_TWITTER_LINK" target="_blank">Twitter</a>
+  </div>
+
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="hidden" name="_replyto" value="project.ancestrix@gmail.com">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Message / Interest in Pilot Program" rows="4" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <footer>© 2025 Project Ancestrix</footer>
+
+</body>
+</html>
