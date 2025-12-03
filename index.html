@@ -78,6 +78,34 @@
       opacity: 0.85;
     }
 
+    /* FAQ styles */
+    .faq-container {
+      margin-top: 40px;
+      width: 100%;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .faq-toggle {
+      background: #1e1e1e;
+      padding: 12px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      border: 1px solid #333;
+    }
+
+    .faq-content {
+      display: none;
+      background: #111;
+      margin-top: 10px;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #222;
+      line-height: 1.5rem;
+      font-size: 0.95rem;
+    }
+
     footer {
       margin-top: 40px;
       margin-bottom: 20px;
@@ -110,7 +138,38 @@
     <button type="submit">Send</button>
   </form>
 
+  <!-- FAQ SECTION -->
+  <div class="faq-container">
+    <div class="faq-toggle" onclick="toggleFAQ()">FAQ ▼</div>
+    <div id="faq-content" class="faq-content">
+      <p><strong>• What is Project Ancestrix?</strong><br>
+      A community-driven ancestry project launching summer 2026. We collect participant submissions and analyze patterns of heritage, migration, and cultural identity.</p>
+
+      <p><strong>• Who can join?</strong><br>
+      Anyone 18+ from any background. You do NOT need a specific ancestry breakdown.</p>
+
+      <p><strong>• What do I need to submit?</strong><br>
+      Basic personal background, region/family origins, and (optional) genetic test results.</p>
+
+      <p><strong>• Is this safe and private?</strong><br>
+      Yes — we only use your submission for internal study and no personal data is ever shared publicly.</p>
+
+      <p><strong>• When will the project launch?</strong><br>
+      Full rollout begins summer 2026.</p>
+
+      <p><strong>• Will I get updates?</strong><br>
+      Yes — participants will receive email updates as the project evolves.</p>
+    </div>
+  </div>
+
   <footer>© 2025 Project Ancestrix</footer>
+
+  <script>
+    function toggleFAQ() {
+      const faq = document.getElementById('faq-content');
+      faq.style.display = faq.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 
 </body>
 </html>
